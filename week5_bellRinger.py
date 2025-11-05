@@ -1,24 +1,36 @@
 # Problem Set 1: Indexing and Slicing Strings
 # Basic Indexing:
 # Given the string magic = 'abracadabra',
+magic = "abracadabra"
 # a. Retrieve the 5th character.
+print(magic[4])
 # b. Retrieve the second to last character.
+print(magic[-2])
 # c. Find the first occurrence of the letter 'c'.
-
+print(magic.find("c"))
 # Advanced Slicing:
 # Given the string alphabet = 'abcdefghijklmnopqrstuvwxyz',
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
 # a. Extract the letters 'hij'.
+print(alphabet[7:10])
 # b. Extract every second letter starting from 'a' to 'm'.
+print(alphabet[0:13:2])
 # c. Reverse the entire string using slicing.
-
+print(alphabet[::-1]) # Second value determins what happens to the numbers
 # Problem Set 2: Extracting Information
 # From Descriptions:
 # Extract the name of the famous personality from the quote "Ask not what your country can do for you — ask what you can do for your country. - John F. Kennedy"
-
+quote = "Ask not what your country can do for you — ask what you can do for your country. - John F. Kennedy"
+print(quote.find('John F. Kennedy'))
+personality_name = quote[83:]
+print(personality_name)
 # Manipulating Words:
 # Given the string info = "Python is fun. Fun is good. Good is subjective.",
+info = "Python is fun. Fun is good. Good is subjective.",
 # a. Extract the word 'subjective' without knowing its exact position.
+print(info.find)
 # b. Extract every third word.
+print(info[::3])
 # c. Reverse the positions of the words, but keep the characters in each word in the same order.
 
 # Problem Set 3: String Methods
