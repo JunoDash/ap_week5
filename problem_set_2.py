@@ -8,9 +8,14 @@ def problem2():
     print(personality_name)
     # Manipulating Words:
     # Given the string info = "Python is fun. Fun is good. Good is subjective.",
-    info = "Python is fun. Fun is good. Good is subjective.",
+    info = "Python is fun. Fun is good. Good is subjective."
     # a. Extract the word 'subjective' without knowing its exact position.
-    print(info.find())
+    Index_info = info.find('subjective')
+    Info2 = info[Index_info:]
+    print(Info2)
     # b. Extract every third word.
-    print(info[::3])
+    info_split = info.split()
+    print(info_split)
     # c. Reverse the positions of the words, but keep the characters in each word in the same order.
+    Info_reversed = info[::-1]
+    print(Info_reversed)
